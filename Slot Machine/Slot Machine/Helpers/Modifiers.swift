@@ -17,9 +17,16 @@ struct ShadowModifier: ViewModifier {
 
 struct ButtonModifier: ViewModifier {
     func body(content: Content) -> some View {
-        content
-            .font(.title)
-            .tint(.white)
+        if #available(iOS 15.0, *) {
+            content
+                .font(.title)
+                .tint(.white)
+        } else {
+            // Fallback on earlier versions
+            content
+                .font(.title)
+                .accentColor(.white)
+        }
     }
 }
 
