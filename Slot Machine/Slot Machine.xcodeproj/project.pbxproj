@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		76097ED3291F98270017642E /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 76097ED2291F98270017642E /* Sounds */; };
+		76097ED8291F9C290017642E /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76097ED7291F9C290017642E /* LogoView.swift */; };
+		76097EDA291F9C560017642E /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76097ED9291F9C560017642E /* Modifiers.swift */; };
+		76097EDC291FA02C0017642E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76097EDB291FA02C0017642E /* Extensions.swift */; };
 		76BAB614291E745400FF8C6A /* Slot_MachineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BAB613291E745400FF8C6A /* Slot_MachineApp.swift */; };
 		76BAB616291E745400FF8C6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BAB615291E745400FF8C6A /* ContentView.swift */; };
 		76BAB618291E745500FF8C6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BAB617291E745500FF8C6A /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* Begin PBXFileReference section */
 		76097ED2291F98270017642E /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		76097ED6291F98B10017642E /* Slot-Machine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Slot-Machine-Info.plist"; sourceTree = SOURCE_ROOT; };
+		76097ED7291F9C290017642E /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		76097ED9291F9C560017642E /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		76097EDB291FA02C0017642E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		76BAB610291E745400FF8C6A /* Slot Machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slot Machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BAB613291E745400FF8C6A /* Slot_MachineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot_MachineApp.swift; sourceTree = "<group>"; };
 		76BAB615291E745400FF8C6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				76BAB615291E745400FF8C6A /* ContentView.swift */,
+				76097ED7291F9C290017642E /* LogoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -46,6 +53,8 @@
 		76097ED5291F98610017642E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				76097ED9291F9C560017642E /* Modifiers.swift */,
+				76097EDB291FA02C0017642E /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -159,7 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76097EDC291FA02C0017642E /* Extensions.swift in Sources */,
+				76097EDA291F9C560017642E /* Modifiers.swift in Sources */,
 				76BAB616291E745400FF8C6A /* ContentView.swift in Sources */,
+				76097ED8291F9C290017642E /* LogoView.swift in Sources */,
 				76BAB614291E745400FF8C6A /* Slot_MachineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
