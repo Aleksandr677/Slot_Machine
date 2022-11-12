@@ -52,6 +52,52 @@ struct ContentView: View {
                 }
                 
                 //MARK: - SLOT MACHINE
+                VStack(alignment: .center , spacing: 0) {
+                    //MARK: - REEL #1
+                    ZStack {
+                        ReelView()
+                        
+                        Image("gfx-bell")
+                            .resizable()
+                            .modifier(ImageModifier())
+                    }
+                    
+                    HStack(alignment: .center, spacing: 0) {
+                        //MARK: - REEL #2
+                        ZStack {
+                            ReelView()
+                            
+                            Image("gfx-seven")
+                                .resizable()
+                                .modifier(ImageModifier())
+                        }
+                        
+                        Spacer()
+                        
+                        //MARK: - REEL #3
+                        ZStack {
+                            ReelView()
+                            
+                            Image("gfx-cherry")
+                                .resizable()
+                                .modifier(ImageModifier())
+                        }
+                    }
+                    .frame(maxWidth: 500)
+                    
+                    //MARK: - SPIN BUTTON
+                    Button {
+                        print("Spin the reels")
+                    } label: {
+                        Image("gfx-spin")
+                            .renderingMode(.original)
+                            .resizable()
+                            .modifier(ImageModifier())
+                    }
+
+                    
+                } //SLOT MACHINE
+                .layoutPriority(2)
                 
                 //MARK: - FOOTER
                 
