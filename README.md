@@ -23,3 +23,4 @@ Stack:
 6. Custom elements
 7. Custom modifiers
 8. Custom extensions
+9. iMessage Stickers
